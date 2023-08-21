@@ -1,0 +1,94 @@
+<main id="main" class="main">
+
+  <app-breadcrumb [tBread]="titlePage" [fBread]="firstBread" [sBread]="secondBread" [thBread]="thirdBread"></app-breadcrumb>
+
+    <section class="section">
+        <div class="row">
+          
+          <div class="col-lg-12">
+  
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Preencha todos os campos</h5>
+                
+                <!-- Custom Styled Validation -->
+                <form class="row g-3 needs-validation" novalidate>
+                  <div class="col-md-6">
+                    <label for="validationCustom01" class="form-label">Nome da Certificação</label>
+                    <input type="text" class="form-control" id="validationCustom01" required>
+                    <div class="invalid-feedback">
+                      Digite o nome da certificação
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="validationCustom01" class="form-label">Validade da Certificação em ano</label>
+                    <input type="number" class="form-control" id="validationCustom01" required>
+                    <div class="invalid-feedback">
+                      Digite um número
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Cadastrar</button>
+                  </div>
+                </form><!-- End Custom Styled Validation -->
+  
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </section>
+  
+    <section class="section">
+    <div class="row">
+        <div class="col-lg-12">
+
+        <div class="card">
+            <div class="card-body">
+            <h5 class="card-title">Lista de certificação</h5>
+        
+            <!-- Table with stripped rows -->
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Validade</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>CPA-10</td>
+                    <td>5 anos</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>CPA-20</td>
+                    <td>5 anos</td>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>CEA</td>
+                    <td>5 anos</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Ouvidoria</td>
+                    <td>5 anos</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>PQO</td>
+                    <td>5 anos</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- End Table with stripped rows -->
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+  </main><!-- End #main -->

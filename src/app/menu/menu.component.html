@@ -1,0 +1,57 @@
+<aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav">
+
+      <li class="nav-item">
+        <div class="nav-link">
+          <a [routerLink]="['certDash']" routerLinkActive="router-link-active" >
+            <span class="menu-topic">Dashboard</span>
+          </a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <div class="nav-link">
+         <span class="menu-topic">Certificações</span>
+        </div>
+        <ul>
+          <li class="sidebar-nav nav-link collapsed">
+              <a [routerLink]="['certColabList']" routerLinkActive="router-link-active">
+                <span>Lista de Colaboradores</span>
+              </a>
+          </li>
+          <li class="sidebar-nav nav-link collapsed">
+              <a [routerLink]="['certCadaColabComponent']" routerLinkActive="router-link-active">
+                <span>Cadastro de Colaboradores</span>
+              </a>
+          </li>    
+          <li class="sidebar-nav nav-link collapsed">
+              <a [routerLink]="['cetCadaEmpComponent']" routerLinkActive="router-link-active">
+                <span>Cadastro de Empresas</span>
+              </a>  
+          </li>
+          <li class="sidebar-nav nav-link collapsed">
+              <a [routerLink]="['cetCadaNegComponent']" routerLinkActive="router-link-active">
+                <span>Cadastro de Negócios</span>
+              </a>
+          </li>
+          <li class="sidebar-nav nav-link collapsed">
+            <a [routerLink]="['cetCadaGesComponent']" routerLinkActive="router-link-active">
+              <span>Cadastro de Gestores</span>
+            </a>
+          </li>
+          <li class="sidebar-nav nav-link collapsed">
+            <a [routerLink]="['cetCadaBpComponent']" routerLinkActive="router-link-active">
+              <span>Cadastro de BP</span>
+            </a>
+          </li>
+          <li class="sidebar-nav nav-link collapsed">
+              <a [routerLink]="['cetCadaCerComponent']" routerLinkActive="router-link-active">
+                <span>Cadastro de Certificações</span>
+              </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+  </aside>

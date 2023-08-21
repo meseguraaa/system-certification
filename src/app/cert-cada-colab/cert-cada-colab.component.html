@@ -1,0 +1,207 @@
+<main id="main" class="main">
+
+  <div class="pagetitle">
+    <h1>{{ titlePage }}</h1>
+    <nav>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">{{ firstBread }}</li>
+        <li class="breadcrumb-item">{{ secondBread }}</li>
+        <li class="breadcrumb-item active">{{ thirdBread }}</li>
+      </ol>
+    </nav>
+  </div>
+
+    <section class="section">
+      <div class="row">
+        
+        <div class="col-lg-12">
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Preencha todos os campos</h5>
+              
+              <!-- Custom Styled Validation -->
+              <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-4">
+                  <label for="validationCustom01" class="form-label">Nome Completo</label>
+                  <input type="text" class="form-control" id="validationCustom01" required>
+                  <div class="invalid-feedback">
+                    Digite o nome completo
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustomUsername" class="form-label">E-mail</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    <input type="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                      Digite seu e-mail
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom01" class="form-label">CPF</label>
+                  <input type="number" class="form-control" id="validationCustom01" required>
+                  <div class="invalid-feedback">
+                    Digite 11 dígitos
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom03" class="form-label">Data de Nascimento</label>
+                  <input type="date" class="form-control" id="validationCustom03" required>
+                  <div class="invalid-feedback">
+                    Escolha uma data
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom05" class="form-label">Empresa</label>
+                  <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Escolha uma opção</option>
+                    <option>BX Blue</option>
+                    <option>Liga</option>
+                    <option>Original</option>
+                    <option>PicPay</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Escolha uma empresa
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom05" class="form-label">Negócio</label>
+                  <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Escolha uma opção</option>
+                    <option>Atacado</option>
+                    <option>PF</option>
+                    <option>PJ</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Escolha um negócio
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom05" class="form-label">Data de Admissão</label>
+                  <input type="date" class="form-control" id="validationCustom05" required>
+                  <div class="invalid-feedback">
+                    Escolha uma data
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom05" class="form-label">Data de Demissão</label>
+                  <input type="date" class="form-control" id="validationCustom05" required>
+                  <div class="invalid-feedback">
+                    Escolha uma data
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom04" class="form-label">Certificação</label>
+                  <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Escolha uma opção</option>
+                    <option>CPA-10</option>
+                    <option>CPA-20</option>
+                    <option>CEA</option>
+                    <option>Ouvidoria</option>
+                    <option>PQO</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Escolha uma certificação
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom05" class="form-label">Carregar Certificado</label>
+                  <div class="col-sm-12">
+                    <input class="form-control" type="file" id="formFile">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom05" class="form-label">Data de Expedissão</label>
+                  <input type="date" class="form-control" id="validationCustom05" required>
+                  <div class="invalid-feedback">
+                    Escolha uma data
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom04" class="form-label">Gestor</label>
+                  <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Escolha uma opção</option>
+                    <option>Karine Kirchoff</option>
+                    <option>Mariana Mascarin</option>
+                    <option>Patricia Colleti</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Escolha uma certificação
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom04" class="form-label">BP</label>
+                  <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Escolha uma opção</option>
+                    <option>Camila Melo</option>
+                    <option>Daisy Sou Chu</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Escolha uma certificação
+                  </div>
+                </div>
+                <label for="validationCustom05" class="form-label">Progresso na Certificação</label>
+                <div class="col-2">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                      <label class="form-check-label" for="gridRadios1">
+                        Atualização
+                    </label>
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2" checked>
+                      <label class="form-check-label" for="gridRadios2">
+                        Curso
+                    </label>
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" checked>
+                      <label class="form-check-label" for="gridRadios3">
+                        Prova
+                    </label>
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4" checked>
+                      <label class="form-check-label" for="gridRadios4">
+                      Vigente
+                    </label>
+                  </div>
+                </div>
+                <label for="validationCustom05" class="form-label">Status</label>
+                <div class="col-2">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios1" value="option1" checked>
+                      <label class="form-check-label" for="gridRadios1">
+                        Ativo
+                    </label>
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios2" value="option2" checked>
+                      <label class="form-check-label" for="gridRadios2">
+                        Demitido
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">Cadastrar</button>
+                </div>
+              </form><!-- End Custom Styled Validation -->
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->

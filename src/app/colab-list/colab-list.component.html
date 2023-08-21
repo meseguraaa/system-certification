@@ -1,0 +1,112 @@
+<main id="main" class="main">
+
+  <app-breadcrumb [tBread]="titlePage" [fBread]="firstBread" [sBread]="secondBread" [thBread]="thirdBread"></app-breadcrumb>
+
+    <section class="section">
+      <div class="row">
+        <div class="col-lg-12">
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Lista de colaboradores que possuem certificação</h5>
+              <div class="col-12">
+                  <button class="btn btn-primary" routerLink="/certCadaColabComponent" type="submit">Adicionar colaborador</button>
+              </div>
+              <!-- Table with stripped rows -->
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">E-mail</th>
+                    <th scope="col">CPF</th>
+                    <th scope="col">Empresa</th>
+                    <th scope="col">Negócio</th>
+                    <th scope="col">Data de Nascimento</th>
+                    <th scope="col">Data de Admissão</th>
+                    <th scope="col">Certificação</th>
+                    <th scope="col">Data de Expiração</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="alert alert-danger alert-dismissible fade show">
+                    <th scope="row">1</th>
+                    <td>Fabio Adriano dos Santos Pereira</td>
+                    <td>fabio.adriano@picpay.com</td>
+                    <td>11111111111</td>
+                    <td>Original</td>
+                    <td>Atacado</td>
+                    <td>03/02/1987</td>
+                    <td>05/11/2022</td>
+                    <td>CPA-20</td>
+                    <td>15/01/2023</td>
+                    <td><button type="button" class="btn btn-primary" routerLink="/certCadaColabComponent"><i class="bi bi-pencil me-1"></i>Editar</button></td>
+                    <td><button type="button" class="btn btn-danger"><i class="bi bi-trash me-1"></i>Excluir</button></td>
+                  </tr>
+                  <tr class="alert alert-warning alert-dismissible fade show">
+                    <th scope="row">2</th>
+                    <td>Bruno Hernandes Leal</td>
+                    <td>bruno.leal@picpay.com</td>
+                    <td>22222222222</td>
+                    <td>PicPay</td>
+                    <td>PJ</td>
+                    <td>20/02/1986</td>
+                    <td>23/05/2022</td>
+                    <td>CPA-10</td>
+                    <td>10/06/2023</td>
+                    <td><button type="button" class="btn btn-primary" routerLink="/certCadaColabComponent"><i class="bi bi-pencil me-1"></i>Editar</button></td>
+                    <td><button type="button" class="btn btn-danger"><i class="bi bi-trash me-1"></i>Excluir</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Rafael Costa Cruz</td>
+                    <td>r.cruz@picpay.com</td>
+                    <td>33333333333</td>
+                    <td>Original</td>
+                    <td>Atacado</td>
+                    <td>02/12/1985</td>
+                    <td>11/03/2019</td>
+                    <td>CEA</td>
+                    <td>05/06/2024</td>
+                    <td><button type="button" class="btn btn-primary" routerLink="/certCadaColabComponent"><i class="bi bi-pencil me-1"></i>Editar</button></td>
+                    <td><button type="button" class="btn btn-danger"><i class="bi bi-trash me-1"></i>Excluir</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Karine Silvestre Nascimento</td>
+                    <td>karine.nascimento@picpay.com</td>
+                    <td>44444444444</td>
+                    <td>Original</td>
+                    <td>Atacado</td>
+                    <td>20/02/1984</td>
+                    <td>06/07/2009</td>
+                    <td>CEA</td>
+                    <td>22/06/2025</td>
+                    <td><button type="button" class="btn btn-primary" routerLink="/certCadaColabComponent"><i class="bi bi-pencil me-1"></i>Editar</button></td>
+                    <td><button type="button" class="btn btn-danger"><i class="bi bi-trash me-1"></i>Excluir</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>Tiffany Deleneri Pourteymour</td>
+                    <td>tiffany.pourteymour@picpay.com</td>
+                    <td>55555555555</td>
+                    <td>PicPay</td>
+                    <td>PF</td>
+                    <td>18/04/1995</td>
+                    <td>19/09/2022</td>
+                    <td>CPA-20</td>
+                    <td>05/10/2027</td>
+                    <td><button type="button" class="btn btn-primary" routerLink="/certCadaColabComponent"><i class="bi bi-pencil me-1"></i>Editar</button></td>
+                    <td><button type="button" class="btn btn-danger"><i class="bi bi-trash me-1"></i>Excluir</button></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <!-- End Table with stripped rows -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>

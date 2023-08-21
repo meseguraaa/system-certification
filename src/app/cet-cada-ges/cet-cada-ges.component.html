@@ -1,0 +1,87 @@
+<main id="main" class="main">
+
+    <app-breadcrumb [tBread]="titlePage" [fBread]="firstBread" [sBread]="secondBread" [thBread]="thirdBread"></app-breadcrumb>
+  
+    <section class="section">
+      <div class="row">
+        
+        <div class="col-lg-12">
+  
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Preencha todos os campos</h5>
+              
+              <!-- Custom Styled Validation -->
+              <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-6">
+                  <label for="validationCustom01" class="form-label">Nome do Gestor</label>
+                  <input type="text" class="form-control" id="validationCustom01" required>
+                  <div class="invalid-feedback">
+                    Digite o nome do gestor
+                  </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustomUsername" class="form-label">E-mail</label>
+                    <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        <input type="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                            Digite seu e-mail
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">Cadastrar</button>
+                </div>
+              </form><!-- End Custom Styled Validation -->
+  
+            </div>
+          </div>
+  
+        </div>
+      </div>
+  </section>
+    
+      <section class="section">
+          <div class="row">
+            <div class="col-lg-12">
+    
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Lista de gestores</h5>
+              
+                  <!-- Table with stripped rows -->
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">E-mail</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Karine Kirchoff</td>
+                        <td>karine.kirchoff@picpay.com</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Mariana Mascarin</td>
+                        <td>mariana.mascarin@picpay.com</td>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Patricia Colleti</td>
+                        <td>patricia.colleti@picpay.com</td>
+                      </tr>
+                    </tbody>
+                  </table>
+    
+                  <!-- End Table with stripped rows -->
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+  
+    </main><!-- End #main -->
